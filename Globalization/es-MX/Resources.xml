@@ -1913,7 +1913,7 @@
 	<item name="AdminEditMemberDetails_SendEmail">Enviar notificación por Email:</item>		
 	<item name="AdminEditMemberDetails_EmailContents">Contenido del Email:</item>		
 	<item name="AdminEditMemberDetails_SummaryErrorHeader">Ha ocurrido el siguiente problema...</item>	
-	<item name="AdminEditMemberDetails_SummaryErrorUsernameAlreadyExists">The new username you provided already exists within the database. Username's must be unique.</item>	
+	<item name="AdminEditMemberDetails_SummaryErrorUsernameAlreadyExists">El nombre de usuario nuevo que ha proporcionado ya existe en la base de datos. Los nombres de usuario deben ser únicos.</item>	
 	<item name="AdminEditMemberDetails_SummaryErrorEmailAlreadyExists">The new email address you provided already exists within the database. E-mail's must be unique.</item>
 	<item name="AdminEditMemberDetails_SummaryEmailSuccessHeader">Members Email Updated Successfully!</item>	
 	<item name="AdminEditMemberDetails_SummaryEmailSuccessText">This members primary email has been updated successfully. If you choose to send an email notification this has been queued and should be sent shortly.</item>	
