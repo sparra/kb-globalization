@@ -1911,8 +1911,8 @@
 	<item name="AdminEditMemberDetails_NewPassword1">Nueva Contraseña:</item>		
 	<item name="AdminEditMemberDetails_NewPassword2">Se ha generado automáticamente una nueva contraseña aleatoria. Puede sustituir opcionalmente esta contraseña si lo desea mediante la sustitución de la contraseña opuesta. Debe tener entre 4 y 32 caracteres, sin espacios. Sensible a mayúsculas.</item>		
 	<item name="AdminEditMemberDetails_SendEmail">Enviar notificación por Email:</item>		
-	<item name="AdminEditMemberDetails_EmailContents">Email contents:</item>		
-	<item name="AdminEditMemberDetails_SummaryErrorHeader">The following problem occurred...</item>	
+	<item name="AdminEditMemberDetails_EmailContents">Contenido del Email:</item>		
+	<item name="AdminEditMemberDetails_SummaryErrorHeader">Ha ocurrido el siguiente problema...</item>	
 	<item name="AdminEditMemberDetails_SummaryErrorUsernameAlreadyExists">The new username you provided already exists within the database. Username's must be unique.</item>	
 	<item name="AdminEditMemberDetails_SummaryErrorEmailAlreadyExists">The new email address you provided already exists within the database. E-mail's must be unique.</item>
 	<item name="AdminEditMemberDetails_SummaryEmailSuccessHeader">Members Email Updated Successfully!</item>	
