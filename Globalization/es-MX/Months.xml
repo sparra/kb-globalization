@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<!-- This XML defines a list of months to display for the date of birth control -->
+<Months>
+	<Month Value="1">January</Month>
+	<Month Value="2">February</Month>
+	<Month Value="3">March</Month>
+	<Month Value="4">April</Month>
+	<Month Value="5">May</Month>
+	<Month Value="6">June</Month>
+	<Month Value="7">July</Month>
+	<Month Value="8">August</Month>
+	<Month Value="9">September</Month>
+	<Month Value="10">October</Month>	
+	<Month Value="11">November</Month>
+	<Month Value="12">December</Month>
+</Months>

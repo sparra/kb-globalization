@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<emails>
+
+<!-- Email templates file for InstantKB.NET -->
+<!-- If translating please ensure you leave all tags wrapped within angle brackets [tag] as plain English. DO NOT translate the tags. These are translated at runtime -->
+
+<!-- ********************************************************************************************** -->
+<!-- Email sent from share this article option -->
+<!-- ********************************************************************************************** -->
+
+<email templateid="ShareArticle" priority="Medium">
+<to>[RecipientEmailAddress]</to>
+<from>[ApplicationEmailAddress]</from>
+<cc></cc>
+<bcc></bcc>
+<subject>[ApplicationName] - [SenderUsername] sent you the following...</subject>
+<body>Hi,
+
+I thought you may find the link below helpful...
+
+[ReturnURL]
+
+-----------------------------------------
+
+[ApplicationName]
+[ApplicationUrl]
+</body>
+</email>
+
+
+<!-- ********************************************************************************************** -->
+<!-- User Account Activation Email -->
+<!-- ********************************************************************************************** -->
+
+<email templateid="AccountActivation" priority="High">
+<to>[RecipientEmailAddress]</to>
+<from>[ApplicationEmailAddress]</from>
+<cc></cc>
+<bcc></bcc>
+<subject>[ApplicationName] - Account Confirmation Required!</subject>
+<body>Hi [RecipientUsername],
+
+You will need to click the link below to activate your account...
+
+[RecipientConfirmationURL]
+
+You may need to manually copy &amp; paste the URL into the address bar of your browser if the text above is not linked. Please watch for the URL wrapping onto 2 lines. 
+
+If you lose this email you can request the validation email be resent at [PathsSendValidationCode]
+
+Once you have activated your account by clicking the link above you can you can login at anytime by clicking the link below.
+
+[PathsLoginURL]
+
+If you forget your password you can have this resent to your email address at [PathsForgotPassword]
+
+-----------------------------------------
+
+[ApplicationName]
+[ApplicationUrl]
+</body>
+</email>
+
+<!-- ********************************************************************************************** -->
+<!-- Email sent to users informing them the admin must screen the registration first -->
+<!-- ********************************************************************************************** -->
+
+<email templateid="AwaitingAdminActivation" priority="Medium">
+<to>[RecipientEmailAddress]</to>
+<from>[ApplicationEmailAddress]</from>
+<cc></cc>
+<bcc></bcc>
+<subject>[ApplicationName] - Registration Received!</subject>
+<body>Hi [RecipientUsername],
+
+Your registration has been received successfully however the administrator must first approve your account.
+
+You can login and take advantage of certain features however some options may not be available until the administrator has fully activated your account. 
+
+If the administrator chooses you will receive an email confirmation once your account is activated. 
+
+-----------------------------------------
+
+[ApplicationName]
+[ApplicationUrl]
+</body>
+</email>
+
+<!-- ********************************************************************************************** -->
+<!-- Email sent to users once their account is activated either by the admin or by the activation link -->
+<!-- ********************************************************************************************** -->
+
+<email templateid="AccountActivated" priority="Medium">
+<to>[RecipientEmailAddress]</to>
+<from>[ApplicationEmailAddress]</from>
+<cc></cc>
+<bcc></bcc>
+<subject>[ApplicationName] - Account Information</subject>
+<body>Hi [RecipientUsername],
+
+Your account has been approved by [SenderUsername]. You can now begin taking advantage of the features available to registered members. 
+
+For future reference your account details are provided below. Please keep these safe.
+
+Username: [RecipientUsername]
+Email: [RecipientEmailAddress]
+Password: [RecipientPassword]
+
+-----------------------------------------
+
+[ApplicationName]
+[ApplicationUrl]
+</body>
+</email>
+
+<!-- ********************************************************************************************** -->
+<!-- Email sent to users to confirm automated registration, only send when automated registration is enabled -->
+<!-- ********************************************************************************************** -->
+
+<email templateid="AccountAutomaticallyActivated" priority="Medium">
+<to>[RecipientEmailAddress]</to>
+<from>[ApplicationEmailAddress]</from>
+<cc></cc>
+<bcc></bcc>
+<subject>[ApplicationName] - Account Information</subject>
+<body>Hi [RecipientUsername],
+
+Your account is now active. You can now begin taking advantage of the features available to members. 
+
+For future reference your account details are provided below. Please keep these safe.
+
+Username: [RecipientUsername]
+Email: [RecipientEmailAddress]
+Password: [RecipientPassword]
+
+-----------------------------------------
+
+[ApplicationName]
+[ApplicationUrl]
+</body>
+</email>
+
+<!-- ********************************************************************************************** -->
+<!-- Email sent to administrator information a registration requires approval -->
+<!-- ********************************************************************************************** -->
+
+<email templateid="AdminApproveMember" priority="Medium">
+<to>[ApplicationEmailAddress]</to>
+<from>[RecipientEmailAddress]</from>
+<cc></cc>
+<bcc></bcc>
+<subject>[ApplicationName] - Member Awaiting Activation!</subject>
+<body>Dear Administrator,
+
+A new member ([RecipientUsername]) has recently registered and requires activation within the knowledgebase. 
+
+This could be because you have chosen to manually approve all new registrations. 
+
+If you have NOT chosen to approve new members it's likely you have enabled COPPA registration and this new member is under the age of 13. If this is the case please remember to only approve the account once you receive a signed permission form from the child's parent or guardian. Click the link below to view &amp; edit this member's profile...
+
+[PathsAdminEditReceipient]
+
+You will need to be logged in with administrator access to view this link.
+
+-----------------------------------------
+
+[ApplicationName]
+[ApplicationUrl]
+</body>
+</email>
+
+<!-- ********************************************************************************************** -->
+<!-- Email sent to user when they request thier password -->
+<!-- ********************************************************************************************** -->
+
+<email templateid="PasswordReminder" priority="Medium">
+<to>[RecipientEmailAddress]</to>
+<from>[ApplicationEmailAddress]</from>
+<cc></cc>
+<bcc></bcc>
+<subject>[ApplicationName] - Your Account Password!</subject>
+<body>Hi [RecipientUsername],
+
+Please keep this email for your records. Your password follows...
+
+Password: [RecipientPassword]
+
+You can login at [PathsLoginURL]
+
+-----------------------------------------
+
+[ApplicationName]
+[ApplicationUrl]
+</body>
+</email>
+
+<!-- ********************************************************************************************** -->
+<!-- Email sent to user when administrator updates users username, this is only a template and can be change in the admin area -->
+<!-- ********************************************************************************************** -->
+
+<email templateid="AdminUpdateUsersUsernameTemplate" priority="Medium">
+<to></to>
+<from></from>
+<cc></cc>
+<bcc></bcc>
+<subject></subject>
+<body>Hi [RecipientUsername],
+
+An administrator has updated your username at [ApplicationName].
+
+You new username is: [NewUsername]
+
+Please keep this information safe. This may be required the next time you login to the support center.
+
+-----------------------------------------
+
+[ApplicationName]
+[ApplicationUrl]
+</body>
+</email>
+
+<!-- ********************************************************************************************** -->
+<!-- Email sent to user when administrator updates users password, this is only a template and can be change in the admin area -->
+<!-- ********************************************************************************************** -->
+
+<email templateid="AdminUpdateUsersPasswordTemplate" priority="Medium">
+<to></to>
+<from></from>
+<cc></cc>
+<bcc></bcc>
+<subject></subject>
+<body>Hi [RecipientUsername],
+
+An administrator has updated your password at [ApplicationName].
+
+You new password is: [NewPassword]
+
+Please keep this information safe. This may be required the next time you login to the support center.
+
+-----------------------------------------
+
+[ApplicationName]
+[ApplicationUrl]
+</body>
+</email>
+
+<!-- ********************************************************************************************** -->
+<!-- Email sent to user when administrator updates users email address, this is only a template and can be change in the admin area -->
+<!-- ********************************************************************************************** -->
+
+<email templateid="AdminUpdateUsersEmailAddressTemplate" priority="Medium">
+<to></to>
+<from></from>
+<cc></cc>
+<bcc></bcc>
+<subject></subject>
+<body>Hi [RecipientUsername],
+
+An administrator has updated your email address at [ApplicationName].
+
+You new email address is: [NewEmailAddress]
+You old email address was: [RecipientEmailAddress]
+
+Please keep this information safe. This may be required the next time you login to the support center.
+
+-----------------------------------------
+
+[ApplicationName]
+[ApplicationUrl]
+</body>
+</email>
+
+<!-- ********************************************************************************************** -->
+<!-- Email sent to user when administrator updates users password, this is only a template and can be change in the admin area -->
+<!-- ********************************************************************************************** -->
+
+<email templateid="AdminUpdateUsersPasswordTemplate" priority="Medium">
+<to></to>
+<from></from>
+<cc></cc>
+<bcc></bcc>
+<subject></subject>
+<body>Hi [RecipientUsername],
+
+An administrator has updated your password at [ApplicationName].
+
+You new password is: [NewPassword]
+
+Please keep this information safe. This may be required the next time you login to the support centers.
+
+-----------------------------------------
+
+[ApplicationName]
+[ApplicationUrl]
+</body>
+</email>
+
+<!-- ********************************************************************************************** -->
+<!-- Actual email sent to user when administrator updates username, email or password, empty as text from AdminUpdateUsers templates above is used -->
+<!-- ********************************************************************************************** -->
+
+<email templateid="AdminUpdateUsersDetails" priority="Medium">
+<to>[RecipientEmailAddress]</to>
+<from>[ApplicationEmailAddress]</from>
+<cc></cc>
+<bcc></bcc>
+<subject>[ApplicationName] - Account Information</subject>
+<body>[Message]</body>
+</email>
+
+<!-- ********************************************************************************************** -->
+<!-- Email sent to inform staff members when an item is placed in workflow -->
+<!-- ********************************************************************************************** -->
+
+<email templateid="WorkflowStepNotification" priority="High">
+<to>[RecipientEmailAddress]</to>
+<from>[ApplicationEmailAddress]</from>
+<cc></cc>
+<bcc></bcc>
+<subject>[ApplicationName] - Workflow Notification</subject>
+<body>Hi [RecipientUsername],
+
+The item "[Title]" has been placed into the "[WorkFlowStepTitle]" workflow step.
+
+You can edit this item by clicking the link below...
+
+[ReturnURL]
+
+-----------------------------------------
+
+[ApplicationName]
+[ApplicationUrl]
+</body>
+</email>
+
+<!-- ********************************************************************************************** -->
+<!-- Email sent to for escalation rules  -->
+<!-- ********************************************************************************************** -->
+
+<email templateid="EscalationRuleEmail" priority="Medium">
+<to>[RecipientEmailAddress]</to>
+<from>[ApplicationEmailAddress]</from>
+<cc></cc>
+<bcc></bcc>
+<subject>[ApplicationName] - Escalation Rule {[RuleName]} Triggered</subject>
+<body>Hi,
+
+This is a automated notification to inform you the escalation rule {[RuleName]} defined at [ApplicationName] has been triggered.
+
+This escalation rule was executed on the following item...
+
+[TicketTitle]
+[TicketURL]
+
+-----------------------------------------
+
+[ApplicationName]
+[ApplicationUrl]
+</body>
+</email>
+
+
+<!-- ********************************************************************************************** -->
+<!-- Email sent to for rules  -->
+<!-- ********************************************************************************************** -->
+
+<email templateid="AutomatedRuleEmail" priority="Medium">
+<to>[RecipientEmailAddress]</to>
+<from>[ApplicationEmailAddress]</from>
+<cc></cc>
+<bcc></bcc>
+<subject>[ApplicationName] - Rule {[RuleName]} Triggered</subject>
+<body>Hi,
+
+This is a automated notification to inform you the rule {[RuleName]} defined at [ApplicationName] has been triggered.
+
+This rule was executed on the following item...
+
+[TicketTitle]
+[TicketURL]
+
+-----------------------------------------
+
+[ApplicationName]
+[ApplicationUrl]
+</body>
+</email>
+
+
+<!-- ********************************************************************************************** -->
+<!-- Email sent to for rules  -->
+<!-- ********************************************************************************************** -->
+
+<email templateid="StaffTicketAlert" priority="Medium">
+<to>[RecipientEmailAddress]</to>
+<from>[ApplicationEmailAddress]</from>
+<cc></cc>
+<bcc></bcc>
+<subject>[ApplicationName] - Alert {[AlertName]} Triggered</subject>
+<body>Hi [RecipientUsername],
+
+The alert {[AlertName]} you defined within [ApplicationName] has been triggered. 
+
+You can view the item that triggered this alert at the link below...
+
+[TicketTitle]
+[TicketURL]
+
+-----------------------------------------
+
+[ApplicationName]
+[ApplicationUrl]
+</body>
+</email>
+
+
+<!-- ********************************************************************************************** -->
+<!-- Email sent when a staff member responds to a members ticket  -->
+<!-- ********************************************************************************************** -->
+
+<email templateid="TicketMemberStaffResponse" priority="Medium">
+<to>[RecipientEmailAddress]</to>
+<from>[ApplicationEmailAddress]</from>
+<cc></cc>
+<bcc></bcc>
+<subject>[ApplicationName] - New Ticket Reply</subject>
+<body>Hi [RecipientUsername],
+
+This is an automated notification to inform you a response has been posted to your issue at...
+
+[TicketTitle]
+[TicketClientURL]
+
+-----------------------------------------
+
+[ApplicationName]
+[ApplicationUrl]
+</body>
+</email>
+
+<!-- ********************************************************************************************** -->
+<!-- Email sent to members informing them of new tickets  -->
+<!-- ********************************************************************************************** -->
+
+<email templateid="NewTicketMemberConfirmation" priority="Medium">
+<to>[RecipientEmailAddress]</to>
+<from>[ApplicationEmailAddress]</from>
+<cc></cc>
+<bcc></bcc>
+<subject>[ApplicationName] - [TicketTitle]</subject>
+<body>Hi [RecipientUsername],
+
+This is an automated notification to inform you [SenderUsername] has sent you a message.
+
+To view the message please click the link below...
+
+[TicketClientURL]
+
+-----------------------------------------
+
+[ApplicationName]
+[ApplicationUrl]
+</body>
+</email>
+
+
+</emails>
